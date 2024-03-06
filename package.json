@@ -1,6 +1,6 @@
 {
   "name": "@freakycoder/react-native-multiple-select",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Customizable & Animated, Easy to Use Multiple Select Library for React Native",
   "main": "./build/dist/RNMultiSelect.js",
   "repository": "git@github.com:WrathChaos/react-native-multiple-select.git",
@@ -37,16 +37,16 @@
     "react-native-bouncy-checkbox": ">= 1.0.7"
   },
   "devDependencies": {
+    "@react-native-community/eslint-config": "^0.0.5",
     "@types/react": "^16.9.22",
     "@types/react-native": "^0.63.0",
-    "react-native-typescript-transformer": "^1.2.13",
-    "typescript": "^3.7.4",
-    "@react-native-community/eslint-config": "^0.0.5",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.0",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "react-native-typescript-transformer": "^1.2.13",
+    "typescript": "^3.7.4"
   },
   "husky": {
     "hooks": {
@@ -58,5 +58,8 @@
       "npx prettier --write",
       "eslint src/*.js --fix-dry-run"
     ]
+  },
+  "dependencies": {
+    "react-native-animated-spinkit": "^1.5.2"
   }
 }

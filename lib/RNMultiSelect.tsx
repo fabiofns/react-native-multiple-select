@@ -339,25 +339,7 @@ const RNMultiSelect = (props: IMultiSelectProps) => {
           renderItem={renderMenuItem}
           keyExtractor={(item, index) => index.toString()}
         />
-        <RNBounceable
-          onPress={() => {
-            handleOnToggleMenuBar();
-            onDoneButtonPress && onDoneButtonPress();
-          }}
-        >
-          <View
-            style={_doneButtonStyle(
-              doneButtonBackgroundColor,
-              doneButtonShadowColor,
-            )}
-          >
-            <TextComponent
-              style={[styles.doneButtonTextStyle, doneButtonTextStyle]}
-            >
-              {doneButtonText || "Done"}
-            </TextComponent>
-          </View>
-        </RNBounceable>
+        
       </>
     );
   };
